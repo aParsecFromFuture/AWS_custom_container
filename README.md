@@ -73,7 +73,7 @@ client = boto3.client('sagemaker-runtime')
 endpoint_name = 'Your endpoint name' # Your endpoint name.
 content_type = "text/csv"   # The MIME type of the input data in the request body.
 
-payload = pd.DataFrame([[1.5,0.2,4.4,2.6]])
+payload = pd.DataFrame([["LP001005", "Female", "Yes", 0, "Graduate", "Yes", 30000, 100, 66.0, 36.0, 1.0, "Urban"]])
 csv_file = StringIO()
 payload.to_csv(csv_file, sep=",", header=False, index=False)
 payload_as_csv = csv_file.getvalue()
