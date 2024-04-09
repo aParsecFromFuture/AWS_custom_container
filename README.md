@@ -61,8 +61,7 @@ wait for the Status to change to “InService”.
 
 ### Invoke your endpoint
 
-In order to invoke your endpoint (in this example for the iris dataset), you can use the following
-Python script with boto3 (Python SDK) to invoke your endpoint, for example from a Amazon SageMaker notebook.
+In order to invoke your endpoint, you can use the following python script with Amazon SageMaker notebook.
 ```python
 import boto3
 from io import StringIO
